@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#173a00;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+#nav{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: 0px 25px 20px -26px rgb(7, 24, 1 0.75) ;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar  li{
+    padding:  10px; 
+    margin-right: 20px;
+    list-style-type: none;
+    display: block;
+    
+}
+.navbar li a{
+    padding: 5px;
+    color: rgb(7, 24, 1);
+    text-decoration: none;
+    font-size: 18px; 
+    border: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: all ease-in-out 0.5s;   
+}
+#nav i{
+    display: none;
+}
+.navbar li a:hover{
+    border-color: transparent;
+    background-color: rgb(11, 199, 5);
+}
+.logo{
+    color:#173a00;
+    font-size: 30px;
+    letter-spacing :2px;
+    font-family:Georgia, 'Times New Roman', Times, serif ; 
+    display : block;
+    background: rgb(11, 199, 5) ; 
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+.logo a{
+    text-decoration: none;
+}
+#main {
+   display: flex;  
+   justify-content: space-evenly;
+   flex-direction: row-reverse;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 50px 0px;
+
+}
+
+#main img{
+    width: 500px;
+    height: 500px;
+    filter: drop-shadow(5px 5px 2px #173a00);
+}
+.text{
+    color:#173a00;
+    width: 500px;
+}
+.text h1{
+    color:#173a00;
+    letter-spacing: 3px;
+    font-size: 70px;
+}
+
+.text h5{
+    color: rgb(11, 199, 5) ;
+    font-size: 25px;
+    padding: 2px;
+    letter-spacing: 3px;margin-bottom: 10px;
+}
+
+.text p{
+    color: rgb(7, 24, 1);
+    width: 500px;
+    font-size: 20px;
+   letter-spacing: 1px;
+   line-height: 35px;
+    font-family:'Times New Roman', Times, serif
+}
+#service{
+    margin:70px 0px ;
+}
+ 
+
+#service h1{
+    font-size: 40px;
+    font-weight: 800;
+    padding: 2px;
+    text-align: center;
+    margin:  0px 20px;
+    letter-spacing: 3px;
+    color:#173a00 ;
+    background: linear-gradient(to right ,white );
+    filter: brightness(1.1);
+}
+.service-list{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap;
+ margin: 20px 0px;
+}
+
+.card{
+    padding: 10px;
+    width: 225px;
+    margin-bottom: 30px;
+    color:#173a00;
+    background-color: rgba(102, 255, 0, 0.26);
+    border-radius: 10px;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+}
+.card h4{
+    font-size: 18px;
+}
+.card p , h4, button{
+    margin: 10px;
+}
+.card button{
+    border: none;
+    background-color: #173a00;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color:rgb(193, 247, 158) ;
+    transition: transform 0.5s;
+    
+}
+.card button:hover{
+   color: white;
+
+}
+#about{
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+.abt ul{
+   
+    cursor: pointer;
+
+}
+.abt ul li{
+    list-style-type: none ;
+    font-size: 100px;
+    font-weight: bolder;
+    color:black;
+    opacity: 0.5;
+    line-height: 90px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    filter: drop-shadow  #173a00;
+   
+}
+.abt ul li:hover{
+    opacity: 0.8;
+}
+.exp-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow:1px 12px 28px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+}
+.exp-box h5{
+    color:rgb(11, 199, 5) ;
+    letter-spacing: 1px;
+}
+.exp ,.work, .skill {
+    width: 220px;
+    margin: 20px;
+    flex-basis: 200;
+    flex-grow: 1;
+
+}
+.exp-box p{
+    margin: 5px 0px;
+
+}
+.exp img{
+    height: 80px;
+    width: 80px;
+}
+.work img{
+    width :70px;
+    height: 120px;
+
+}
+
+
+#work{
+    margin: 40px;
+
+}
+.wrk h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.wrk a{
+    text-decoration: none;
+    color: #173a00;
+
+}
+.wrk a{
+    color: #173a00;
+}
+.wrk a h1:active{
+    color:rgb(11, 199, 5) ;
+}
+.wrk a h1:hover{  
+    color: #3f9406;
+}
+.wrk a h1 i:hover{  
+    color: #3f9406;
+}
+.col-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding: 20px 0px;
+}
+.cardd{
+    flex-grow: 0;
+    flex-basis: 200;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: transform 0.5s;
+}
+.cardd img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s;
+    border-radius: 5px;
+}
+.cardd:hover{
+    transform: scale(1.1);
+}
+
+#footer{
+    background:whitesmoke;
+    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    padding: 50px;
+}
+.blo{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+
+    
+
+}
+.bloo{
+    width: 70px;
+    height: 130px;
+}
+.blo img{
+    height: 100%;
+    width: 100%;
+}
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.menu {
+    padding-top: 20px;
+  
+}
+.menu a{
+    padding:0px 0px;
+    margin: 10px;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+    transition: all 0.1s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.menu a::after{
+    content: '' ;
+    width: 0%;
+    height: 2px;
+    background: rgb(11, 199, 5) ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.menu a:hover::after{
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    padding: 10px ;
+    background-color:rgb(11, 199, 5)  ;
+    color:rgb(7, 24, 1) ;
+    border-radius: 5px;
+    height: 40px;
+    width: 130px;
+    border: none;
+    text-align: center;
+    transition: all 0.3s;
+}
+.btn:hover{
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn {
+    text-decoration: none;
+}
+.btn2{
+    border: none;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+   padding: 5px;
+    flex-basis: 200;
+    flex-grow: 1;
+}
+.form input {
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px;
+}
+.form textarea{
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.follow h1{
+    font-size: 35px;
+    color:#173a00;}
+
+.icon{
+    display: flex;
+}
+.icon a{
+    font-size: 35px;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+    color: rgb(54, 53, 53);
+
+}
+.icon i{
+    transition: transform 0.5s;
+}
+.icon a i:hover{
+    color: rgb(11, 199, 5)  ;
+    transform: translateY(-5px)
+}
+
+.copyright{
+    width: 100%;
+    height: 35px;
+    text-align:center;
+    background-color:gainsboro;
+    margin-top:5px ;
+    padding:10px 0px ;
+
+}
+.copyright p{
+    font-size: 14px;
+}
+.copyright a{
+    text-decoration: none;
+}
+.copyright p strong{
+    color:blue;
+}
+#msg{
+    color:  rgb(11, 199, 5) ;
+    margin-top: -20px;
+    padding: 5px 15px;
+
+    display: block;
+}
+
+@media only screen and (max-width:600px) {
+    #nav i{
+        display: block;
+        font-size: 25px
+        
+       /** background-color:  rgb(11, 199, 5) ;
+        padding: 2px 5px;
+        border-radius: 5px;**/
+
+    }
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .logo{
+        font-size: 22px;
+        margin-left: 0px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background: rgb(11, 199, 5) ;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1; 
+        transition: right 0.5s;
+
+    }
+    .navbar li a{
+        display: block;
+        width: 100%;
+    }
+    .navbar li a:hover{
+        background-color: rgb(79, 255, 73)  ;
+
+    }
+    .navbar i{
+        position: absolute;
+        top: 27px;
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #173a00;
+        
+    }
+    #main img{
+        width: 300px;
+        height: 300px;
+        filter: drop-shadow(5px 5px 2px #173a00);
+    }
+    .text{
+        color: rgb(7, 24, 1);
+        width: 280px;
+        padding: 5px;
+    }
+    .text h1{
+        color:  rgb(7, 24, 1);
+        letter-spacing: 1px;
+        font-size: 35px;
+    }
+    
+    .text h5{
+        font-size: 16px;
+        padding: 2px;
+        letter-spacing: 1px; 
+        margin-bottom: 5px;
+    }
+    
+    .text p{
+        color: rgb(7, 24, 1);
+        width: 280px;
+        font-size: 16px;
+       letter-spacing: 1px;
+       line-height: 20px;
+        font-family:'Times New Roman', Times, serif
+    }
+    #about{
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .abtbox{
+       padding: 5px;
+        border-radius: 10px;
+        box-shadow:1px 12px 28px -15px rgba(0, 0, 0, 0.75);
+
+        
+    }
+    .abt ul{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .abt ul li{
+        margin: 5px;
+        list-style-type: none ;
+        font-size: 40px;
+        font-weight: bolder;
+        color: black;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: all ease-in-out 0.5s;
+        filter: drop-shadow(2,5,10);
+       
+    }
+    .exp-box p {
+        font-size: 16px;
+    }
+    .exp-box h5{
+        font-size: 14px;
+    }
+    .exp-box h1{
+        font-size: 25px;
+    }
+    .exp-box h3{
+        font-size: 18px;
+    }
+
+    .exp , .work, .skill {
+        width: 140px;
+        
+    }
+    .exp-box{
+        padding: 20px;
+        text-align: center;
+       margin: 10px;
+    }
+    .work img{
+        width: 50px;
+        height: 90px;
+    }
+    .exp img {
+        width: 55px;
+        height: 55px;
+    }
+    #service h1{
+        font-size: 30px;
+    }
+    .card{
+        height: auto;
+    }
+    .wrk a h1{
+        font-size: 25px;
+        text-align: center;
+       
+    }
+    #work{
+        margin:0px;
+
+    }
+    .cardd{
+        width: 280px;
+        height: 280px;
+        margin: 20px 0px;
+    }
+    .content{
+        padding: 5px;
+    }
+    .bloo img{
+        width: 70px;
+        height: 120px;
+    }
+
+    .form input{
+        width: 300px;
+       
+
+    }
+    .follow h1{
+        font-size: 30px;
+    }
+    .icon a{
+        font-size: 30px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .menu{
+        margin: 5px;
+    }
+    .form textarea{
+        width: 300px;
+       
+
+    }
+    .copyright p{
+        font-size: 10px;
+    }
+    .blo{
+        gap: 20px;
+    }
+
+}
